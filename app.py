@@ -23,5 +23,3 @@ async def start_conversation(prompt: str, isConnectedAppProvided: bool):
     except Exception as e:
         return Response(statuscode = 500, content=str(e))
 
-if __name__ == "__main__":    
-    uvicorn.run(app, host = "0.0.0.0", port = 8000)
